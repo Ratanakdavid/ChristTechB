@@ -6,6 +6,9 @@ import { AppService } from './app.service';
 import { CategoriesModule } from './categories/categories.module';
 import { UsersModule } from './users/users.module';
 import { AuthModule } from './auth/auth.module';
+import { ProductsModule } from './products/products.module';
+import { CartModule } from './cart/cart.module';
+import { OrdersModule } from './orders/orders.module';
 
 @Module({
   imports: [
@@ -28,6 +31,9 @@ import { AuthModule } from './auth/auth.module';
     CategoriesModule,
     UsersModule,
     AuthModule,
+    ProductsModule,
+    CartModule,
+    OrdersModule,
   ],
   controllers: [AppController],
   providers: [AppService],
